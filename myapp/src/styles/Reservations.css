@@ -1,0 +1,26 @@
+.reservations-section {
+    padding: 60px 20px;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .reservations-content {
+    max-width: 800px;
+    text-align: center;
+  }
+  
+  .reservations-content h2 {
+    font-size: 36px;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .reservations-content p {
+    font-size: 18px;
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 15px;
+  }
+  
