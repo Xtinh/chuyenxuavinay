@@ -1,12 +1,12 @@
 version: '3.9'
 services:
-  lab4exam:
+  chuyenxuavanay:
     build:
       context: .
       dockerfile: Dockerfile
-    container_name: adsmanager
+    container_name: chuyenxuavanay
     ports:
       - "3000:3000"
     environment:
       - NODE_ENV=production
-    image: bwnguyenvu/adsmanager:latest
+    image: bwnguyenvu/chuyenxuavanay:latest
