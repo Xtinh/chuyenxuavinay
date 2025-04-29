@@ -1,32 +1,28 @@
 # Build stage
 FROM node:18 AS builder
 
-# Set working directory
 WORKDIR /app
 
-# Copy package files
-COPY package.json yarn.lock ./
+# Copy only package.json first
+COPY package.json ./
 
-# Install dependencies
-RUN yarn install --frozen-lockfile
+# Install dependencies with npm
+RUN npm install
 
 # Copy source code
 COPY . .
 
 # Build the Next.js application
-RUN yarn build
+RUN npm run build
 
 # Production stage
 FROM node:18-alpine
 
-# Set working directory
 WORKDIR /app
 
-# Copy built application from builder stage
+# Copy built app
 COPY --from=builder /app ./
 
-# Expose port 3088
 EXPOSE 3000
 
-# Start the application in production mode
-CMD ["yarn", "start"]
+CMD ["npm", "start"]
