@@ -1,5 +1,5 @@
 import React from "react";
-import hero1 from '../../assets/images/hero1.png';
+import menu3 from '../../assets/images/menu3.png';
 
 // Mission Section Component
 const MissionSection = () => {
@@ -8,7 +8,7 @@ const MissionSection = () => {
         <section className="mission-section">
           <div className="mission-container">
             <div className="mission-image">
-              <img src={hero1} alt="Ramen bowl" />
+              <img src={menu3} alt="Ramen bowl" />
             </div>
             <div className="mission-text">
               <p className="mission-statement">

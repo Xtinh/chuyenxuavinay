@@ -1,11 +1,20 @@
 import React from "react";
 import '../../styles/Reservations.css';
+import about from '../../assets/images/about.png';
 
 const Reservations = () => {
   return (
     <>
       <section className="reservations-section" id="reservations">
+        <div className="reservations-image">
+        <img
+        src={about}
+        alt="Background"
+        className="background-image"
+        />
+        </div>
         <div className="reservations-content">
+          
           <h2>Reservations</h2>
           <p>
             Book your table today and experience the unique taste of tradition.

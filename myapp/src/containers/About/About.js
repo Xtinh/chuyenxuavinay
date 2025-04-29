@@ -1,11 +1,17 @@
 import React from "react";
 import '../../styles/About.css';
+import about from '../../assets/images/about.png';
 
 const About = () => {
   return (
     <>
       <section className="about-section" id="about">
-        <div className="about-content">
+        <div className="about-image">
+        <img
+        src={about}
+        alt="Background"
+        className="background-image"
+        />
           <h2>About Us</h2>
           <p>
             Welcome to Son Tinh Thuy Tinh — where traditional taste meets the soul of folklore.

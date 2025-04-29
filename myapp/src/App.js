@@ -1,13 +1,20 @@
 import React from 'react';
 import './App.css';
 import Header from './containers/Header/Header.js';
+import HeaderVN from './containers/Header/HeaderVN.js';
 import Footer from './containers/Footer/Footer.js';
+import FooterVN from './containers/Footer/FooterVN.js';
 import Body from './containers/Body/Body.js';
+import BodyVN from './containers/Body/BodyVN.js';
 import homepage from './assets/images/homepage.png';
 import About from './containers/About/About.js';
 import Menu from './containers/Menu/Menu.js';
 import Reservations from './containers/Reservations/Reservations.js';
 import Contact from './containers/Contact/Contact.js';
+import AboutVN from './containers/About/AboutVN.js';
+import MenuVN from './containers/Menu/MenuVN.js';
+import ReservationsVN from './containers/Reservations/ReservationsVN.js';
+import ContactVN from './containers/Contact/ContactVN.js';
 import { BrowserRouter as Router, Route, Routes, Link, Outlet } from 'react-router-dom';
 
 // Home Component (Landing page)
@@ -40,7 +47,13 @@ function EnglishPage() {
 
 // Vietnamese Page Component
 function VietnamesePage() {
-  return <div><h1>Welcome to the Vietnamese Page</h1></div>;
+  return (
+    <div className="app-container">
+      <HeaderVN />
+      <Outlet />
+      <FooterVN />
+    </div>
+  );
 }
 
 // App Component
@@ -53,10 +66,16 @@ const App = () => {
           <Route index element={<Body />} />
           <Route path="menu" element={<Menu />} />
           <Route path="about" element={<About />} />
-          <Route path="reservations" element={<Reservations />} />
           <Route path="contact" element={<Contact />} />
+          <Route path="reservations" element={<Reservations />} />
         </Route>
-        <Route path="/vi/*" element={<VietnamesePage />} />
+        <Route path="/vi/*" element={<VietnamesePage />}>
+          <Route index element={<BodyVN />} />
+          <Route path="thucdon" element={<MenuVN />} />
+          <Route path="gioithieu" element={<AboutVN />} />
+          <Route path="datban" element={<ReservationsVN />} />
+          <Route path="lienhe" element={<ContactVN />} />
+        </Route>
       </Routes>
     </Router>
   );

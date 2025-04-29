@@ -1,5 +1,5 @@
 import React from "react";
-import hero1 from '../../assets/images/hero1.png';
+import menu1 from '../../assets/images/menu1.png';
 import { Link } from 'react-router-dom';
 
 // Menu Section Component
@@ -7,7 +7,7 @@ const MenuSection = () => {
   return (
     <>
       <section className="menu-section">
-        <h2 className="section-title">Menu Favorites </h2>
+        <h2 className="section-title">Menu Signature </h2>
 
         <div className='menu-flex'>
           <div className="menu-grid">
@@ -49,7 +49,7 @@ const MenuSection = () => {
             </div>
           </div>
           <div className="menu-item-image">
-            <img src={hero1} alt="Ramen bowl" />
+            <img src={menu1} alt="Ramen bowl" />
           </div>
         </div>
 
