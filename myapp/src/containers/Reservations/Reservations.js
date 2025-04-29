@@ -1,6 +1,6 @@
 import React from "react";
 import '../../styles/Reservations.css';
-import about from '../../assets/images/about.png';
+import resver from '../../assets/images/resver.png';
 
 const Reservations = () => {
   return (
@@ -8,7 +8,7 @@ const Reservations = () => {
       <section className="reservations-section" id="reservations">
         <div className="reservations-image">
         <img
-        src={about}
+        src={resver}
         alt="Background"
         className="background-image"
         />
