@@ -10,23 +10,21 @@ jobs:
     runs-on: ubuntu-22.04
 
     steps:
-      # Checkout code
       - name: Checkout
         uses: actions/checkout@v2
 
-      # Setup Node.js with Yarn
-      - name: Setup Node.js with Yarn
+      - name: Setup Node.js
         uses: actions/setup-node@v2
         with:
           node-version: 18
-          cache: 'yarn'
 
-      # Install dependencies, build and test
-      - run: yarn install --frozen-lockfile
-      - run: yarn build
-      # - run: yarn test
+      - name: Install dependencies
+        run: npm install
 
-      # Login to Docker Hub
+      - name: Build
+        run: npm run build
+      # - run: npm run test
+
       - name: Login Docker Hub
         uses: docker/login-action@v1
         with:
@@ -45,7 +43,6 @@ jobs:
           docker tag bwnguyenvu/chuyenxuavanay:latest chuyenxuavanay:latest
           docker push bwnguyenvu/chuyenxuavanay:latest
 
-      # Deploy to VPS via SSH
       - name: Deploy to VPS
         uses: appleboy/ssh-action@v0.1.6
         with:
@@ -54,18 +51,13 @@ jobs:
           password: ${{ secrets.SSH_PRIVATE_KEY }}
           port: 22
           script: |
-            # Pull the latest Docker image from Docker Hub
             docker pull bwnguyenvu/chuyenxuavanay:latest
-
-            # Stop and remove any existing container
             docker stop chuyenxuavanay-container || true
             docker rm chuyenxuavanay-container || true
-
-            # Run the new container from the pulled image
             docker run -d --name chuyenxuavanay-container \
-              -p 3089:3089 \
+              -p 3000:3000 \
               bwnguyenvu/chuyenxuavanay:latest
-      # Delete Docker image from Docker Hub
+
       - name: Delete Docker image from Docker Hub
         run: |
           curl -X DELETE \
