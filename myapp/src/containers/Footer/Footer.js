@@ -26,7 +26,7 @@ const Footer = () => {
               <a href="https://www.instagram.com/chuyenxuavinay.fpt/" className="social-link">Instagram</a>
               {/* <a href="#twitter" className="social-link">Twitter</a> */}
             </div>
-            <p className="copyright">© 2025 Chuyen xua vi nay. All rights reserved.</p>
+            <p className="copyright">© 2025 Chuyện xưa vị nay. All rights reserved.</p>
           </div>
         </footer>
       </>

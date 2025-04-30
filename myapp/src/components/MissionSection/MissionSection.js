@@ -15,9 +15,9 @@ const MissionSection = () => {
               "SON TINH THUY TINH: TRADITIONAL TASTE, FOLK SOUL."
               </p>
               <p className="mission-description">
-              Inspired by the legend of Son Tinh - Thuy Tinh, 
+              Inspired by the legend of Son Tinh and Thuy Tinh,
               <br />
-              "The Old Story - Today" brings a unique culinary experience, where each dish is a story, each space is a slice of culture.
+              Chuyện xưa vị nay offers a unique culinary experience where each dish tells a story, and every space is a chapter in that journey.
               <br />
               We not only serve delicious food, but also spread the quintessence of Vietnamese cuisine through experiences imbued with folklore - delicate, emotional and full of pride.
               <br />

@@ -14,7 +14,7 @@ const AboutVN = () => {
         />
           <h2>Về Chúng Tôi</h2>
           <p>
-            Chào mừng đến với Sơn Tinh Thủy Tinh — nơi hương vị truyền thống giao hòa với linh hồn dân gian.
+            Chào mừng đến với Chuyện xưa vị nay — nơi hương vị truyền thống giao hòa với linh hồn dân gian.
             Chúng tôi tự hào mang đến những món ăn được lấy cảm hứng từ di sản phong phú của văn hóa Việt Nam,
             kết hợp hương vị đậm đà với một chút hiện đại.
           </p>

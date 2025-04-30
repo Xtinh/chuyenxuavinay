@@ -15,7 +15,7 @@ const MissionSectionVN = () => {
                 "SƠN TINH THỦY TINH: VỊ TRUYỀN THỐNG, HỒN DÂN GIAN."
               </p>
               <p className="mission-description">
-                Lấy cảm hứng từ truyền thuyết Sơn Tinh - Thủy Tinh, “Chuyện xưa vị nay” mang đến một trải nghiệm ẩm thực độc đáo, nơi mỗi món ăn là một câu chuyện, mỗi không gian là một lát cắt văn hóa.
+              Lấy cảm hứng từ truyền thuyết Sơn Tinh – Thủy Tinh, “Chuyện xưa vị nay” mang đến một trải nghiệm ẩm thực độc đáo, nơi mỗi món ăn là một câu chuyện, mỗi không gian là một hành trình của câu chuyện.
                 <br />
                 Chúng tôi không chỉ phục vụ món ngon, mà còn lan tỏa tinh hoa ẩm thực Việt qua những trải nghiệm đậm chất dân gian – tinh tế, đầy cảm xúc và tự hào.
                 <br />

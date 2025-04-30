@@ -14,7 +14,7 @@ const About = () => {
         />
           <h2>About Us</h2>
           <p>
-            Welcome to Son Tinh Thuy Tinh — where traditional taste meets the soul of folklore.
+            Welcome to Chuyện xưa vị nay — where traditional taste meets the soul of folklore.
             We are proud to offer dishes inspired by the rich heritage of Vietnamese culture,
             blending authentic flavors with a modern touch.
           </p>
