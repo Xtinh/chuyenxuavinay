@@ -1,0 +1,68 @@
+name: deploy
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build-deploy:
+    name: Build and Deploy chuyenxuavanay
+    runs-on: ubuntu-22.04
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: 18
+
+      - name: Install dependencies
+        run: npm install
+        working-directory: ./myapp
+
+      - name: Build
+        run: npm run build
+        working-directory: ./myapp
+      # - run: npm run test
+
+      - name: Login Docker Hub
+        uses: docker/login-action@v1
+        with:
+          username: ${{ secrets.DOCKER_USERNAME }}
+          password: ${{ secrets.DOCKER_PASSWORD }}
+
+      - name: Install Docker Compose
+        run: |
+          sudo curl -L "https://github.com/docker/compose/releases/download/1.29.2/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
+          sudo chmod +x /usr/local/bin/docker-compose
+          docker-compose --version
+
+      - name: Build and Push Docker image
+        run: |
+          docker-compose -f docker-compose.yml build
+          docker tag bwnguyenvu/chuyenxuavanay:latest chuyenxuavanay:latest
+          docker push bwnguyenvu/chuyenxuavanay:latest
+        working-directory: ./myapp
+
+      - name: Deploy to VPS
+        uses: appleboy/ssh-action@v0.1.6
+        with:
+          host: ${{ secrets.SSH_HOST }}
+          username: ${{ secrets.SSH_USER }}
+          password: ${{ secrets.SSH_PRIVATE_KEY }}
+          port: 22
+          script: |
+            docker pull bwnguyenvu/chuyenxuavanay:latest
+            docker stop chuyenxuavanay-container || true
+            docker rm chuyenxuavanay-container || true
+            docker run -d --name chuyenxuavanay-container \
+              -p 3000:3000 \
+              bwnguyenvu/chuyenxuavanay:latest
+
+      - name: Delete Docker image from Docker Hub
+        run: |
+          curl -X DELETE \
+          -u ${{ secrets.DOCKER_USERNAME }}:${{ secrets.DOCKER_PASSWORD }} \
+          https://hub.docker.com/v2/repositories/bwnguyenvu/chuyenxuavanay/tags/latest/
