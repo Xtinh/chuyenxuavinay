@@ -34,11 +34,11 @@ body {
 }
 
 .restaurant-title {
-  font-family: 'Great Vibes', cursive;
+  font-family: 'Playfair Display', serif;
   font-size: 36px;
   font-weight: 500;
   color: #000000; /* màu đỏ trầm nổi bật */
-  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3); /* làm chữ nổi bật hơn */
+ 
 }
 
 .main-navigation ul {
@@ -53,7 +53,7 @@ body {
 
 .main-navigation a {
   text-decoration: none;
-  color: #333;
+  color: #000000;
   font-size: 16px;
   font-weight: 500;
 }
@@ -101,16 +101,20 @@ body {
 }
 
 .mission-statement {
-  font-size: 18px;
-  font-weight: 600;
+  font-family: 'Playfair Display', serif;
+  font-size: 22px;
   margin-bottom: 20px;
   color: #000;
 }
 
+
 .mission-description {
-  font-size: 16px;
-  color: #666;
+  font-family: 'Anton', sans-serif;
+  font-size: 26px;
+  font-weight: bolder;
+  color: #000000;
 }
+
 
 /* Performance Section Styles */
 .performance-section {
@@ -141,15 +145,33 @@ body {
   display: block;
 }
 
-.card-title {
+.card-title-1,
+.card-title-2,
+.card-title-3 {
   position: absolute;
-  bottom: 20px;
-  left: 20px;
   color: white;
-  font-size: 14px;
+  font-size: 22px;
   font-weight: 600;
   text-transform: uppercase;
+
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
 }
+
+.card-title-1 {
+  bottom: 400px;
+}
+
+.card-title-2 {
+  bottom: 275px;
+}
+
+.card-title-3 {
+  bottom: 200px;
+}
+
+
 
 /* Menu Section Styles */
 .menu-section {

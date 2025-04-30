@@ -16,9 +16,9 @@ const MissionSectionVN = () => {
               </p>
               <p className="mission-description">
                 Lấy cảm hứng từ truyền thuyết Sơn Tinh - Thủy Tinh, “Chuyện xưa vị nay” mang đến một trải nghiệm ẩm thực độc đáo, nơi mỗi món ăn là một câu chuyện, mỗi không gian là một lát cắt văn hóa.
-                <br /><br />
+                <br />
                 Chúng tôi không chỉ phục vụ món ngon, mà còn lan tỏa tinh hoa ẩm thực Việt qua những trải nghiệm đậm chất dân gian – tinh tế, đầy cảm xúc và tự hào.
-                <br /><br />
+                <br />
                 Bước vào “Chuyện xưa vị nay” là bước vào hành trình nhớ về cội nguồn – nơi ẩm thực, không gian và cảm xúc giao hòa, tạo nên những khoảnh khắc khó quên cho mỗi thực khách.
               </p>
             </div>

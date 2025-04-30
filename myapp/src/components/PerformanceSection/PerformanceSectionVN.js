@@ -12,15 +12,15 @@ const PerformanceSectionVN= () => {
           <div className="performance-grid">
             <div className="performance-card">
               <img src={center1} alt="Đôi tay đầu bếp đang chuẩn bị món ăn" />
-              <h3 className="card-title">MÚA RỐI NƯỚC VIỆT NAM</h3>
+              <h3 className="card-title-1">MÚA RỐI NƯỚC VIỆT NAM</h3>
             </div>
             <div className="performance-card">
               <img src={center2} alt="Nguyên liệu tươi sống" />
-              <h3 className="card-title">KHU TRƯNG BÀY VĂN HÓA</h3>
+              <h3 className="card-title-2">KHU TRƯNG BÀY VĂN HÓA</h3>
             </div>
             <div className="performance-card">
               <img src={center3} alt="Đĩa sushi" />
-              <h3 className="card-title">PHỤC VỤ BẰNG TÂM VÀ ĐAM MÊ</h3>
+              <h3 className="card-title-3">PHỤC VỤ BẰNG TÂM VÀ ĐAM MÊ</h3>
             </div>
           </div>
         </section>

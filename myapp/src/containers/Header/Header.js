@@ -12,7 +12,7 @@ const Header = () => {
     <>
       <header className="site-header">
         <div className="header-container">
-          <h1 className="restaurant-title">Chuyện xưa vị nay</h1>
+          <h1 className="restaurant-title">“Chuyện xưa vị nay”</h1>
           <nav className="main-navigation">
             <ul>
               <li><Link to="/en">Home</Link></li>
