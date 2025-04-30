@@ -40,7 +40,7 @@ const MenuSectionVN = () => {
               </div>
             </div>
             <div className="view-all-container">
-              <li><Link to="menu" className="view-all-button">XEM TOÀN BỘ THỰC ĐƠN</Link></li>
+              <li><Link to="thucdon" className="view-all-button">XEM TOÀN BỘ THỰC ĐƠN</Link></li>
             </div>
           </div>
           <div className="menu-item-image">

@@ -22,7 +22,7 @@ const Contact = () => {
             📧 Email: chuyenxuavinayfpt@gmail.com
           </p>
           <p>
-            Our team is here to assist you and ensure you have the best experience with Son Tinh Thuy Tinh.
+            Our team is here to assist you and ensure you have the best experience at "Chuyen xua vi nay".
           </p>
         </div>
       </section>

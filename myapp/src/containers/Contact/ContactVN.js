@@ -22,7 +22,7 @@ const Contact = () => {
             📧 Email: chuyenxuavinayfpt@gmail.com
           </p>
           <p>
-            Đội ngũ của chúng tôi luôn sẵn sàng hỗ trợ bạn và đảm bảo bạn có trải nghiệm tuyệt vời tại Sơn Tinh Thủy Tinh.
+            Đội ngũ của chúng tôi luôn sẵn sàng hỗ trợ bạn và đảm bảo bạn có trải nghiệm tuyệt vời tại "Chuyện xưa vị nay".
           </p>
         </div>
       </section>

@@ -6,7 +6,7 @@ const FooterVN = () => {
       <>
         <footer className="site-footer">
           <div className="footer-container">
-            <h2 className="footer-heading">Trải nghiệm "Chuyện xưa vị nay" ngay hôm nay.</h2>
+            <h2 className="footer-heading">Trải nghiệm tuyệt vời tại "Chuyện xưa vị nay".</h2>
             <div className="contact-grid">
               <div className="contact-item">
                 <h3 className="contact-title">SỐ ĐIỆN THOẠI</h3>
