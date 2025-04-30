@@ -25,7 +25,7 @@ const Reservations = () => {
             📧 Email us at: <strong>chuyenxuavinayfpt@gmail.com  </strong>
           </p>
           <p>
-            Or simply walk in and we will do our best to accommodate you!
+          You’re also welcome to visit us in person – we’re always ready to warmly welcome you and serve you with our utmost dedication!
           </p>
         </div>
       </section>

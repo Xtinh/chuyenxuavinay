@@ -25,7 +25,7 @@ const ReservationsVN = () => {
             📧 Gửi email cho chúng tôi: <strong>chuyenxuavinayfpt@gmail.com</strong>
           </p>
           <p>
-            Hoặc bạn có thể đến trực tiếp và chúng tôi sẽ cố gắng hết sức để phục vụ bạn!
+          Bạn cũng có thể ghé thăm trực tiếp nhà hàng – chúng tôi luôn sẵn sàng chào đón và phục vụ bạn một cách tận tâm nhất!
           </p>
         </div>
       </section>
