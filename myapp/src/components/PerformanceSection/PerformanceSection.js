@@ -13,11 +13,11 @@ const PerformanceSection = () => {
           <div className="performance-grid">
             <div className="performance-card">
               <img src={center1} alt="Chef hands preparing food" />
-              <h3 className="card-title">CRAFTED BY OUR MASTER CHEFS</h3>
+              <h3 className="card-title">VIETNAM WATER PUPPET SHOW</h3>
             </div>
             <div className="performance-card">
               <img src={center2} alt="Fresh ingredients" />
-              <h3 className="card-title">USING THE FINEST INGREDIENTS</h3>
+              <h3 className="card-title">CULTURAL EXHIBITION AREA</h3>
             </div>
             <div className="performance-card">
               <img src={center3} alt="Sushi platter" />

@@ -1,6 +1,6 @@
 import React from "react";
 import '../../styles/About.css';
-import about from '../../assets/images/about.png';
+import resver from '../../assets/images/resver.png';
 
 const About = () => {
   return (
@@ -8,7 +8,7 @@ const About = () => {
       <section className="about-section" id="about">
         <div className="about-image">
         <img
-        src={about}
+        src={resver}
         alt="Background"
         className="background-image"
         />

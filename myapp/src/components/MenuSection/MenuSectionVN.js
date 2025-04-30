@@ -7,7 +7,8 @@ const MenuSectionVN = () => {
   return (
     <>
       <section className="menu-section">
-        <h2 className="section-title">Món đặc biệt</h2>
+        <h2 className="section-title">Menu Signature
+        </h2>
 
         <div className='menu-flex'>
           <div className="menu-grid">

@@ -1,6 +1,6 @@
 import React from "react";
 import '../../styles/About.css';
-import about from '../../assets/images/about.png';
+import resver from '../../assets/images/resver.png';
 
 const AboutVN = () => {
   return (
@@ -8,7 +8,7 @@ const AboutVN = () => {
       <section className="about-section" id="about">
         <div className="about-image">
         <img
-        src={about}
+        src={resver}
         alt="Hình nền"
         className="background-image"
         />
