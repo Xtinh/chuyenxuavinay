@@ -41,8 +41,7 @@ jobs:
 
       - name: Build and Push Docker image
         run: |
-          docker-compose -f docker-compose.yml build
-          docker tag bwnguyenvu/chuyenxuavanay:latest chuyenxuavanay:latest
+          docker build -t bwnguyenvu/chuyenxuavanay:latest .
           docker push bwnguyenvu/chuyenxuavanay:latest
         working-directory: ./myapp
 
