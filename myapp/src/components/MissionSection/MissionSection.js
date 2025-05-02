@@ -21,7 +21,7 @@ const MissionSection = () => {
               <br />
               We not only serve delicious food, but also spread the quintessence of Vietnamese cuisine through experiences imbued with folklore - delicate, emotional and full of pride.
               <br />
-              Entering "The Old Story - Today" is entering a journey to remember the origin - where cuisine, space and emotions intersect, creating memorable moments for each diner.
+              Entering "Chuyện xưa vị nay" is entering a journey to remember the origin - where cuisine, space and emotions intersect, creating memorable moments for each diner.
               </p>
             </div>
           </div>
